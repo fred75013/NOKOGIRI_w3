@@ -28,7 +28,7 @@ end
 
 def valdoise_array(valdoise)
     hash_names_emails = get_townhall_name(valdoise).zip(get_townhall_email(valdoise)).map{|x| [x].to_h}
-    puts hash_names_emails
+    return hash_names_emails
 end
 valdoise_array(valdoise)
 
